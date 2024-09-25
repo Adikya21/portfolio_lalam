@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins';
+  scroll-behavior: smooth;
+  
+}
+@media screen and (min-width:300px){
+  body{
+    margin: 1rem;
+    background-color: black;
+    color: #fff;
+    height: 100%;
+    /* position: relative; */
+  }
+  body h1{
+    color: orangered;
+  }
+  .introduction{
+    flex-wrap:wrap ;
+  }
+  header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu ul{
+    display: none;
+  }
+  .left h1{
+    font-size: 2.5rem;
+  }
+  .left p{
+    text-align: justify;
+    word-spacing: none;
+  }
+  .introduction .right{
+    display: flex;
+    justify-content: center;
+  }
+  .right img{
+    height: 14rem;
+    width: 14rem;
+  }
+  .aboutMe p{
+    text-align: justify;
+  }
+  .downloadBtn{
+    background: #fff;
+    height: 3rem;
+    width: 8rem;
+    border: none;
+    border-radius: 12px;
+    color: orangered;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 0 5px #5ee0e9;
+    transition: 0.5s;
+  }
+  .downloadBtn:hover{
+    box-shadow: 0 0 10px #fff, 0 0 10px #fff,0 0 10px #fff,0 0 10px #fff;
+  }
+  .skills{
+    margin: 2rem 0;
+  }
+  .skills .techImg img{
+    height: 4rem;
+    width: 4rem;
+    background-color: #fff;
+    border-radius:12px;
+    margin-top: 1rem;
+    cursor: pointer;
+  }
+  .projects h3{
+    margin: 2rem 0 0 0;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(255, 25, 0));
+  }
+  .projects ul{
+    padding-left: 1rem;
+    text-align: justify;
+    letter-spacing: 0.2px;
+  }
+  .projects img{
+    object-fit: contain;
+    width: 7rem;
+    height: 6rem;
+  }
+  .projects a{
+    color:#fff ;
+    cursor: pointer;
+  }
+  .projects{
+    margin-bottom: 1.5rem;
+  }
+  .contact-me{
+    height: 27rem;
+    width: 22rem;
+    margin-bottom: 5rem;
+  }
+  .contact-me .contact-box{
+    border: 1px solid #fff;
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+  }
+  .contact-me .contact-box .contat-input{
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 12px;
+    outline: none;
+    width: 100%;
+  }
+  .contact-me .contact-box .contact-msg{
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 12px;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    resize: none;
+    overflow: none;
+    display: block;
+    line-height: 1.5rem;
+    white-space: pre-wrap; 
+    overflow-wrap: break-word; 
+  }
+  .contact-me .contact-box .contact-btn{
+    height: 3rem;
+    width: 10rem;
+    background-color: orangered;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+  }
+  .social_media{
+    margin:2rem 0 ;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .social-media-card img{
+    object-fit:cover;
+    height: 3rem;
+  }
+}
+.top-button{
+  position: fixed;
+  right:8%;
+  top: 90%;
+}
+@media screen and (min-width : 800px){
+  .introduction{
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
+  .introduction .right{
+    align-items: center;
+  }
+  .techImg{
+    display: flex;
+    gap:2rem;
+  }
+}
+@media screen and (min-width: 1200px){
+  header{
+    margin-top: 2rem;
+  }
+  .introduction{
+    font-size: 1.5rem;
+  }
+  .introduction h3{
+    font-size: 3rem;
+  }
+  .introduction h1{
+    font-size: 4rem;
+  }
+  .projects img{
+    width: 18rem;
+    height: 9rem;
+    margin-top: 1rem;
+  }
+  .menu ul{
+    display: flex;
+    gap: 2rem;
+    font-size: 1.5rem;
+    position: fixed;
+  }
+  .menu ul li a{
+    color: #fff;
+    text-decoration: none;
+  }
+  .menu ul li:hover{
+    cursor: pointer;
+    border: 1px solid orangered;
+  }
+  .aboutMe h1{
+    font-size: 3rem;
+  }
+  .aboutMe{
+    font-size: 1.5rem;
+  }
+  .skills h1{
+    font-size: 3rem;
+  }
+  .projects h1{
+    font-size: 3rem;
+  }
+  .projects .one h3{
+    font-size: 2rem;
+  }
+  .projects li{
+    font-size: 1.5rem;
+  }
+  .contact-me h1{
+    font-size: 2.9rem;
+    width: 100%;
+  }
+  .top-button{
+    top: 80%;
+  }
+}
